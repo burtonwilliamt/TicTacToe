@@ -11,7 +11,7 @@ Here is an example of one of the strategies the AI will use when trying to beat 
  / . \   *          *  / . \
 /_/ \_\  *          * /_/ \_\
 ********************************
-$  ____   *          *
+$ ____   *          *
  / __ \  *          *
 | |  | | *          *
 | |__| | *          *
