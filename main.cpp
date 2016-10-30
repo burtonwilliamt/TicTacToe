@@ -59,7 +59,13 @@ void draw(int board[3][3], int curs_x, int curs_y){
     }
     mvprintw(ypos[curs_y], xpos[curs_x], "$");
     move(17, 0);
-    mvprintw(18, 0, "Use the arrow keys to navigate, and hit enter to place. Reset at anytime with the space bar.");
+    mvprintw(18, 0, "You are the Os.");
+    mvprintw(19, 0, "The \'$\' is the current positon.");
+    mvprintw(20, 0, "Use the arrow keys to navigate.");
+    mvprintw(21, 0, "Hit enter to place.");
+    mvprintw(22, 0, "Reset anytime with space.");
+    mvprintw(23, 0, "Leave with Esc.");
+    mvprintw(24, 0, "Try to tie.");
     refresh();
 
 }
@@ -282,7 +288,7 @@ int main(int argc, char* argv[]){
       board[curs_x][curs_y] = -1;
       //go through and try to win as the computer
       if(solve(board, 1)){
-        mvprintw(19, 0, "Haha! You suck!");
+        mvprintw(25, 0, "Haha! You suck!");
         draw(board, curs_x, curs_y);
         c = getch();
         //break out of game if not spacebar
